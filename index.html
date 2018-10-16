@@ -1,0 +1,23 @@
+<html>
+  <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="main.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+    <button id="signin-button" class="auth_button" onclick="handleSignInClick()">Sign In</button>
+    <button id="signout-button" class="auth_button" onclick="handleSignOutClick()" style="display: none;">Sign Out</button>
+
+    <div id="countdown_list" style="display: none;">
+      <table id="countdown_table">
+        
+      </table>
+    </div>
+
+  </body>
+</html>
