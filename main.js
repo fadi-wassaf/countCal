@@ -176,7 +176,8 @@ async function updateSignInStatusAsync(isSignedIn){
                 row.innerHTML += "<p class=\"event\"> " + event + "</p>";
 
                 if(distance < 0){
-                    row.innerHTML = "DONEZO";
+                    row.innerHTML = "<p class=\"time\">0:0:0:0</p>" ;
+                    row.innerHTML += "<p class=\"event\"> " + event + " FINISHED</p>";
                 }
             }   
 
